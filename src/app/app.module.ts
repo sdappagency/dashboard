@@ -19,6 +19,7 @@ import { Nav2Component } from './layout/nav2/nav2.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FormTestComponent } from './form-test/form-test.component';
 import { ProfileComponent } from './screens/profile/profile.component';
+import { SidebarComponent } from './layout/sidebar/sidebar.component';
 
 @NgModule({
 	declarations: [
@@ -33,7 +34,8 @@ import { ProfileComponent } from './screens/profile/profile.component';
 		Nav2Component,
 		HeaderComponent,
 		FormTestComponent,
-		ProfileComponent
+		ProfileComponent,
+		SidebarComponent
 	],
 	imports: [
 		BrowserModule,
