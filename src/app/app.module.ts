@@ -17,9 +17,12 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
 import { Footer2Component } from './layout/footer2/footer2.component';
 import { Nav2Component } from './layout/nav2/nav2.component';
 import { HeaderComponent } from './layout/header/header.component';
-import { FormTestComponent } from './form-test/form-test.component';
 import { ProfileComponent } from './screens/profile/profile.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { UsersComponent } from './screens/users/users.component';
+import { ProductsComponent } from './screens/products/products.component';
+import { BannerStatComponent } from './components/banner-stat/banner-stat.component';
+import { ServicesComponent } from './screens/services/services.component';
 
 @NgModule({
 	declarations: [
@@ -33,9 +36,12 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
 		Footer2Component,
 		Nav2Component,
 		HeaderComponent,
-		FormTestComponent,
 		ProfileComponent,
-		SidebarComponent
+		SidebarComponent,
+		UsersComponent,
+		ProductsComponent,
+		BannerStatComponent,
+		ServicesComponent
 	],
 	imports: [
 		BrowserModule,
