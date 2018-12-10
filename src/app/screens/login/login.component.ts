@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
-import {
-	Validators,
-	FormGroup,
-	FormBuilder
-} from '@angular/forms';
+import { Validators, FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
 	selector: 'app-login',
@@ -28,6 +24,9 @@ export class LoginComponent implements OnInit {
 			email: ['', [Validators.required, Validators.email]],
 			password: ['', [Validators.required, Validators.minLength(4)]]
 		});
+		if (this._auth.isAuthenticated) {
+			this._router.navigate(['/']);
+		}
 	}
 
 	get f() {
