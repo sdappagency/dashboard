@@ -68,7 +68,7 @@ export class HomeComponent implements OnInit {
 						}
 					},
 					data: {
-						labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+						labels: ['Juil', 'Aout', 'Sep', 'Oct', 'Nov', 'Dec'],
 						datasets: [
 							{
 								label: 'Sales',
@@ -143,10 +143,10 @@ export class HomeComponent implements OnInit {
 					},
 					data: {
 						labels: [
-							'May',
-							'Jun',
-							'Jul',
-							'Aug',
+							'Mai',
+							'Jui',
+							'Juil',
+							'Août',
 							'Sep',
 							'Oct',
 							'Nov',

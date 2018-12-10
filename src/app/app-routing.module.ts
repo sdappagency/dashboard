@@ -9,6 +9,8 @@ import { ProfileComponent } from './screens/profile/profile.component';
 import { UsersComponent } from './screens/users/users.component';
 import { ProductsComponent } from './screens/products/products.component';
 import { ServicesComponent } from './screens/services/services.component';
+import { OrdersComponent } from './screens/orders/orders.component';
+import { TabletsComponent } from './screens/tablets/tablets.component';
 
 const routes: Routes = [
 	{ path: 'login', component: LoginComponent },
@@ -17,8 +19,10 @@ const routes: Routes = [
 	{ path: 'notFound', component: PageNotFoundComponent },
 	{ path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
 	{ path: 'users', component: UsersComponent, canActivate: [AuthGuard] },
+	{ path: 'tablets', component: TabletsComponent, canActivate: [AuthGuard] },
 	{ path: 'products', component: ProductsComponent, canActivate: [AuthGuard] },
 	{ path: 'services', component: ServicesComponent, canActivate: [AuthGuard] },
+	{ path: 'orders', component: OrdersComponent, canActivate: [AuthGuard] },
 	{ path: '**', redirectTo: '/notFound', pathMatch: 'full' }
 ];
 

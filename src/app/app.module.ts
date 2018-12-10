@@ -23,6 +23,8 @@ import { UsersComponent } from './screens/users/users.component';
 import { ProductsComponent } from './screens/products/products.component';
 import { BannerStatComponent } from './components/banner-stat/banner-stat.component';
 import { ServicesComponent } from './screens/services/services.component';
+import { OrdersComponent } from './screens/orders/orders.component';
+import { TabletsComponent } from './screens/tablets/tablets.component';
 
 @NgModule({
 	declarations: [
@@ -41,7 +43,9 @@ import { ServicesComponent } from './screens/services/services.component';
 		UsersComponent,
 		ProductsComponent,
 		BannerStatComponent,
-		ServicesComponent
+		ServicesComponent,
+		OrdersComponent,
+		TabletsComponent
 	],
 	imports: [
 		BrowserModule,
